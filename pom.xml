@@ -7,6 +7,8 @@
 	<properties>
 		<scala.version>2.11.12</scala.version>
 		<scala.dep.version>2.11</scala.dep.version>
+		<spark.version>2.4.4</spark.version>
+		<spark.dep.version>2.4</spark.dep.version>
 		<spark.nlp.version>2.5.0</spark.nlp.version>
 	</properties>
 
@@ -43,6 +45,25 @@
 			<groupId>com.johnsnowlabs.nlp</groupId>
 			<artifactId>spark-nlp-gpu_${scala.dep.version}</artifactId>
 			<version>${spark.nlp.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core -->
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-core_${scala.dep.version}</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-mllib -->
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-mllib_${scala.dep.version}</artifactId>
+			<version>${spark.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql -->
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-sql_${scala.dep.version}</artifactId>
+			<version>${spark.version}</version>
 		</dependency>
 	</dependencies>
 
